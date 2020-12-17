@@ -167,40 +167,40 @@
         </svg>
     </a>
     <div id="content">loading...</div>
-    <h2>Example effect</h3>
-        <div id="root"></div>
-        <script>
-            document.body.querySelector('#root').innerHTML =
-                `<div class="items">
-                ${colorList.map(function (item, index) {
-                    return `
-                        <div 
-                            class="item"
-                            font-color-10
-                            border-color-10-a
-                            style="background-color:${MaterialDesignColors.getColorGroup(item)[5]};"
-                            onmouseenter="theme.setMainMDColor('${item}')">
-                            ${item}
-                        </div >`
-                }).join('')}
-            </div>
-            ` +
-                `<div class="items">
-                ${['50', '100', '200', '300', '400', '500', '600', '700', '800', '900', 'a100', 'a200', 'a400', 'a700'].map(function (item, index) {
-                    return `
+    <h2>Example effect</h2>
+    <div id="root"></div>
+    <script>
+        document.body.querySelector('#root').innerHTML =
+            `<div class="items">
+            ${colorList.map(function (item, index) {
+                return `
                     <div 
-                        class="item" 
-                        background-color-main-${item} 
-                        font-color-${-3 + index}
-                        font-size-${12 + index * 2}
-                        box-shadow-main-${index % 3}>
-                        <span>Font${12 + index * 2}</span>
-                        <span>${item}</span>
+                        class="item"
+                        font-color-10
+                        border-color-10-a
+                        style="background-color:${MaterialDesignColors.getColorGroup(item)[5]};"
+                        onmouseenter="theme.setMainMDColor('${item}')">
+                        ${item}
                     </div >`
-                }).join('')}
-            </div>
-            `;
-        </script>
+            }).join('')}
+        </div>
+        ` +
+            `<div class="items">
+            ${['50', '100', '200', '300', '400', '500', '600', '700', '800', '900', 'a100', 'a200', 'a400', 'a700'].map(function (item, index) {
+                return `
+                <div 
+                    class="item" 
+                    background-color-main-${item} 
+                    font-color-${-3 + index}
+                    font-size-${12 + index * 2}
+                    box-shadow-main-${index % 3}>
+                    <span>Font${12 + index * 2}</span>
+                    <span>${item}</span>
+                </div >`
+            }).join('')}
+        </div>
+        `;
+    </script>
 </body>
 
 </html>
