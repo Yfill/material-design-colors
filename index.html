@@ -71,7 +71,8 @@
                         font-color-10
                         border-color-10-a
                         style="background-color:${MaterialDesignColors.getColorGroup(item)[5]};"
-                        onmouseenter="theme.setMainMDColor('${item}')">
+                        onmouseenter="theme.setMainMDColor('${item}')"
+                        ontouchstart="theme.setMainMDColor('${item}')">
                         ${item}
                     </div >`
             }).join('')}
