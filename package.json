@@ -1,6 +1,6 @@
 {
   "name": "@yfill/material-design-colors",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A theme extension",
   "author": "Yfill <vps998@gmail.com>",
   "homepage": "https://yfill.cn/material-design-colors",
@@ -20,6 +20,12 @@
     "url": "https://github.com/Yfill/material-design-colors"
   },
   "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "exports": {
+    "require": "./dist/index.cjs.js",
+    "import": "./dist/index.esm.js",
+    "browser": "./dist/index.js"
+  },
   "typings": "types/index.d.ts",
   "files": [
     "dist/*.js",
